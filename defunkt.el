@@ -36,9 +36,8 @@
 (textmate-mode)
 
 (vendor 'yaml-mode)
+(vendor 'tpl-mode)
 
 (vendor 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
-
-
