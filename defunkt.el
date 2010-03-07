@@ -30,6 +30,7 @@
 (vendor 'sass-mode)
 (vendor 'twittering-mode)
 (vendor 'textile-mode)
+(vendor 'coffee-mode)
 
 (vendor 'textmate)
 (textmate-mode)
@@ -39,4 +40,5 @@
 (vendor 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
+
 
