@@ -20,7 +20,7 @@
  '(js2-auto-indent-flag nil)
  '(js2-bounce-indent-flag t)
  '(js2-enter-indents-newline t)
- '(visual-line-mode nil t))
+ '(visual-line-mode nil t)
  '(js2-highlight-level 3)
  '(js2-strict-missing-semi-warning t)
  '(ns-tool-bar-display-mode nil t)
