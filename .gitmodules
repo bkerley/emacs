@@ -22,3 +22,24 @@
 [submodule "vendor/coffee-mode"]
 	path = vendor/coffee-mode
 	url = http://github.com/defunkt/coffee-mode.git
+[submodule "vendor/sunburst"]
+	path = vendor/sunburst
+	url = git://gist.github.com/61465.git
+[submodule "vendor/rhtml-mode"]
+	path = vendor/rhtml-mode
+	url = git://github.com/eschulte/rhtml.git
+[submodule "vendor/yasnippet"]
+	path = vendor/yasnippet
+	url = git://github.com/bkerley/yasnippet.git
+[submodule "vendor/ecb"]
+	path = vendor/ecb
+	url = git://github.com/pat-maddox/ecb.git
+[submodule "vendor/egg"]
+	path = vendor/egg
+	url = git://github.com/bogolisk/egg.git
+[submodule "vendor/cucumber-mode"]
+	path = vendor/cucumber-mode
+	url = git@github.com:bkerley/cucumber.el.git
+[submodule "vendor/feature-mode"]
+	path = vendor/feature-mode
+	url = git://github.com/michaelklishin/cucumber.el.git

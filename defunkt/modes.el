@@ -11,6 +11,9 @@
 ; obj-c
 (setq auto-mode-alist (cons '("\\.m" . objc-mode) auto-mode-alist))
 
+; yaml
+(setq auto-mode-alist (cons '("\\.ya?ml" . yaml-mode) auto-mode-alist))
+
 ; magit
 (eval-after-load 'magit
   '(progn
@@ -22,9 +25,9 @@
 (autoload 'markdown-mode "markdown-mode.el"
    "Major mode for editing Markdown files" t)
 (setq auto-mode-alist (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
-(add-hook 'markdown-mode-hook 
-          '(lambda () 
-             (define-key markdown-mode-map (kbd "<tab>") 'defunkt-indent)))
+(setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
+(define-key markdown-mode-map (kbd "A-r") 'markdown-preview)
+(define-key markdown-mode-map (kbd "<tab>") 'defunkt-indent)
 
 ; paredit
 (autoload 'paredit-mode "paredit"
@@ -49,17 +52,17 @@
 ;(setq ido-enable-flex-matching t)
 
 ; css
-;(define-key css-mode-map [tab] 'defunkt-indent)
+(setq css-mode-indent-depth 2)
+(add-hook 'css-mode-hook '(lambda ()
+                            (define-key css-mode-map [tab] 'defunkt-indent)))
 
-;;
-;; erc
-;;
-;; channel name in prompt
-(setq erc-prompt (lambda ()
-                   (if (and (boundp 'erc-default-recipients) (erc-default-target))
-                       (erc-propertize (concat (erc-default-target) ">") 'read-only t 'rear-nonsticky t 'front-nonsticky t)
-                     (erc-propertize (concat "ERC>") 'read-only t 'rear-nonsticky t 'front-nonsticky t))))
+;; cucumber / feature
+(add-to-list 'load-path "~/.emacs.d/vendor/feature-mode")
+(autoload 'feature-mode "feature-mode.el" "Mode for editing cucumber files" t)
+(setq auto-mode-alist (cons '("\\.feature" . feature-mode) auto-mode-alist))
 
-(setq erc-track-exclude-types '("JOIN" "PART" "QUIT" "NICK" "MODE"))
-(setq erc-autojoin-channels-alist '(("freenode.net" "#github" "#fauna")))
+; mustache
+(add-to-list 'auto-mode-alist '("\\.mustache$" . tpl-mode))
+(add-hook 'tpl-mode-hook '(lambda () (font-lock-mode 1)))
 
+(setq show-trailing-whitespace (not buffer-read-only))
