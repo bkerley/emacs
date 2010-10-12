@@ -33,7 +33,7 @@
 	url = git://github.com/bkerley/yasnippet.git
 [submodule "vendor/ecb"]
 	path = vendor/ecb
-	url = git://github.com/pat-maddox/ecb.git
+	url = git://github.com/patmaddox/ecb.git
 [submodule "vendor/egg"]
 	path = vendor/egg
 	url = git://github.com/bogolisk/egg.git
