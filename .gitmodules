@@ -19,3 +19,6 @@
 [submodule "vendor/textmate.el"]
 	path = vendor/textmate.el
 	url = git://github.com/defunkt/textmate.el
+[submodule "vendor/coffee-mode"]
+	path = vendor/coffee-mode
+	url = http://github.com/defunkt/coffee-mode.git
