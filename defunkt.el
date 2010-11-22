@@ -25,6 +25,7 @@
 (vendor 'gist)
 (vendor 'growl)
 (vendor 'haml-mode)
+(vendor 'sass-mode)
 (vendor 'rinari)
 (vendor 'rhtml-mode)
 (vendor 'sass-mode)
