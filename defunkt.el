@@ -42,3 +42,5 @@
 (vendor 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
+
+(vendor 'go-mode-load)
