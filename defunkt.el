@@ -17,6 +17,7 @@
 (load "defunkt/git")
 
 (vendor 'ack)
+(vendor 'ash-mode)
 (vendor 'cheat)
 (vendor 'feature-mode)
 (vendor 'htmlize)
